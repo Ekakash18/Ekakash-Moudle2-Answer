@@ -1,0 +1,83 @@
+/* main styles */
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* Card styles */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-item{
+    border: 2px solid black;
+    position: relative;
+    background-color:gray;
+    margin-bottom: 20px;
+    font-size:20px;
+    box-sizing: border-box;
+}
+
+.menu-item .title2{
+    position: absolute;
+    top:0px;
+    right:0px;
+    padding: 5px 10px;
+    text-align: center;
+    border-bottom:2px solid black;
+    border-left:2px solid black;
+    font-weight:bold;
+    width:100px;
+}
+.menu-item .desc{
+    font-size:0.9em;
+    padding:25px 10px 0px 20px;
+}
+/* Title color for the cards */
+#Chicken{
+    background-color: #ff9999;
+}
+
+#Beef{
+    background-color: #ff6666;
+    color:white;
+}
+
+#Sushi{
+    background-color: #ffcc66;
+}
+
+/* Media querries style for Desktop, Tablet and Mobile*/
+/* desktop qurries*/
+@media (min-width: 992px) {
+    .menu-item {
+        width: 32%;
+    }
+}
+
+/* tablet qurries*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-item {
+        width: 49%;
+    }
+    .menu-item:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* mobile qurries*/
+@media (max-width: 767px) {
+    .menu-item {
+        width: 100%;
+    }
+}
